@@ -6,14 +6,14 @@ const completed = () =>  (state.walked / state.amazonRiverLength) * 100;
 
 const state = {
   amazonRiverLength: 6400, 
-  walked: 5000,
+  walked: 1000,
 };
 
 const App = () => {
   return (
     <div className="App">
       <River complete={completed()} />
-      <StatsContainer state={state} completed={completed()} />
+      <StatsContainer state={state} completed={completed().toFixed(2)} />
     </div>
   );
 }
