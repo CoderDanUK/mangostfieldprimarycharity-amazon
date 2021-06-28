@@ -1,10 +1,23 @@
 import './River.css';
+import styled from 'styled-components';
 
-const River = () => {
+const safeHeight = (height) => height < 0 ? 0 : height;
+
+const River = (props) => {
+    var waterHeight = safeHeight(props.complete - 10);
+    var StyledBottom = styled.div`
+        height: ${waterHeight}vh;
+        top: ${100 - waterHeight}vh;
+    `;
+
+    var StyledWave = styled.div`
+        top: ${100 - waterHeight - 10}vh;
+    `;
+
     return (
         <div className="river">
-            <div className="wave"></div>
-            <div className="bottom"></div>
+            <StyledWave className="wave"></StyledWave>
+            <StyledBottom className="bottom"></StyledBottom>
         </div>
     );
 }
