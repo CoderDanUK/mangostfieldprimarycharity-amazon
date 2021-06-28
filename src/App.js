@@ -1,7 +1,11 @@
+import Jungle from './components/Jungle/Jungle';
+import River from './components/River/River';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
+      <Jungle />
+      <River />
     </div>
   );
 }
