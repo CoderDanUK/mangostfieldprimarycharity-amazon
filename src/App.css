@@ -1,5 +1,5 @@
 @media only screen and (min-width: 900px) {
-    .river-and-jungle {
+    .river-and-jungle-container {
         position: absolute;
         left: 0;
         top: 0;
@@ -7,8 +7,27 @@
 }
 
 @media only screen and (max-width: 901px) {
-    .river-and-jungle {
+    .river-and-jungle-container {
         position: relative;
         display: block;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .stats-container {
+        left: 0;
+        top: 0;
+        margin: 10px;
+        padding: 5px;
+        position: absolute;
+        width: 33vw;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 901px) {
+    .stats-container {
+        position:relative;
+        display:block;
     }
 }

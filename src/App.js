@@ -13,8 +13,10 @@ const state = {
 const App = () => {
   return (
     <div>
-      <StatsContainer state={state} completed={completed().toFixed(2)} />
-      <div className="river-and-jungle">
+      <div className="stats-container">
+        <StatsContainer state={state} completed={completed().toFixed(2)} />
+      </div>
+      <div className="river-and-jungle-container">
         <River complete={completed()} />
         <Jungle />
       </div>
