@@ -1,0 +1,11 @@
+.jungle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('./river-topdown.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
