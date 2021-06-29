@@ -1,0 +1,14 @@
+@media only screen and (min-width: 900px) {
+    .river-and-jungle {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 901px) {
+    .river-and-jungle {
+        position: relative;
+        display: block;
+    }
+}
