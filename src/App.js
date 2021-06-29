@@ -7,7 +7,7 @@ const completed = () =>  (state.walked / state.amazonRiverLength) * 100;
 
 const state = {
   amazonRiverLength: 6400, 
-  walked: 4000,
+  walked: 2000,
 };
 
 const App = () => {
