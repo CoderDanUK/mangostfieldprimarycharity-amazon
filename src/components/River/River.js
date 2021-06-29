@@ -2,9 +2,10 @@ import './River.css';
 import styled from 'styled-components';
 
 const safeHeight = (height) => height < 0 ? 0 : height;
+const heightOffset = 6;
 
 const River = (props) => {
-    var waterHeight = safeHeight(props.complete - 10);
+    var waterHeight = safeHeight(props.complete - heightOffset);
     var StyledBottom = styled.div`
         height: ${waterHeight}vh;
         top: ${100 - waterHeight}vh;
