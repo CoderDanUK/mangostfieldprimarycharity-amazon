@@ -6,8 +6,8 @@ import Jungle from './components/Jungle/Jungle';
 const completed = () =>  (state.walked / state.amazonRiverLength) * 100;
 
 const state = {
-  amazonRiverLength: 6400, 
-  walked: 2000,
+  amazonRiverLength: 4000, 
+  walked: 348,
 };
 
 const App = () => {
