@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import './StatsContainer.css';
 
 const StatsContainer = (props) => {
     var StyledContainer = styled.div`
