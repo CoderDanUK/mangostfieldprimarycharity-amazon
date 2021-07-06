@@ -8,12 +8,12 @@ const StatsContainer = (props) => {
     return (
         <StyledContainer>
             <div className="text-center font-bold">
-                <h1>Year 5 Students of Mangotsfield Primary are participating in a sponsored walk to help preserve the Amazon Rainforest</h1>
+                <h1>Year 5 Students of Mangotsfield Primary are participating in a sponsored walk, the length of the River Amazon, to support conservation charities.</h1>
                 <h2>Distance covered&nbsp;
                     <span className="td-underline">{props.state.walked} miles</span> of&nbsp;
                     <span className="td-underline">{props.state.amazonRiverLength} miles</span> ({props.completed}%)</h2>
                 <p>
-                    <a href="#">Link to Sponsor Mangotsfield Primary</a>
+                    <a href="https://www.justgiving.com/crowdfunding/mangotsfield-primary" target="_blank">Link to Sponsor Mangotsfield Primary</a>
                 </p>
             </div>
         </StyledContainer>
