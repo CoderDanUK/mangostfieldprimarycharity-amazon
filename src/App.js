@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div>
       <div className="stats-container">
-        <StatsContainer state={state} completed={completed().toFixed(2)} />
+        <StatsContainer state={state} completed={Math.round(completed())} />
       </div>
       <div className="river-and-jungle-container">
         <River complete={completed()} />
